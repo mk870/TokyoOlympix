@@ -14,7 +14,7 @@ import Spinner from '../Components/Spinner/Spinner'
 import { GET_VIDEOSDATA } from '../Components/Utilis/GraphqlQuery'
 
 
-const athletics = (props) => {
+const Athletics = (props) => {
   const {loading, error, data} = useQuery(GET_VIDEOSDATA,{
     variables: {event: "athletics"}})
   const{setClickedVideo} = useContext(AppContext)  
@@ -88,4 +88,4 @@ export const getStaticProps = async () => {
     return { notFound: true };
   }
   }
-export default athletics
+export default Athletics
