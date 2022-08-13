@@ -14,7 +14,7 @@ import Spinner from '../Components/Spinner/Spinner'
 import { GET_VIDEOSDATA } from '../Components/Utilis/GraphqlQuery'
 
 
-const weightLifting = (props) => {
+const WeightLifting = (props) => {
   const {loading, error, data} = useQuery(GET_VIDEOSDATA,{
     variables: {event: "weightlifting"}})
   const mobileSize = useWindowResize(560)
@@ -83,4 +83,4 @@ export const getStaticProps = async () => {
     return { notFound: true };
   }
   }
-export default weightLifting
+export default WeightLifting

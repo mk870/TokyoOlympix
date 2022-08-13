@@ -20,7 +20,7 @@ const schema = yup
   })
   .required();
   
-  const signup = () => {
+  const Signup = () => {
   const [popup,setPopup] = useState('')
   const{value} = useContext(AppContext)
   const{setValue} = useContext(AppContext)
@@ -79,4 +79,4 @@ const schema = yup
   )
 }
 
-export default signup
+export default Signup

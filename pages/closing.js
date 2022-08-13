@@ -15,7 +15,7 @@ const closing = (props) => {
         <SelectDiscipline/>
         <div className={styles.video}>
           <div className={styles.embed}>
-            <iframe className={styles.iframe} title="videoplayer" src={ `https://www.youtube.com/embed/${props.data.id.videoId}`}  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+            <iframe className={styles.iframe} title="videoplayer" src={ `https://www.youtube.com/embed/${props.data.id.videoId}`}  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
           </div>
           <div className={styles.segment}>
             <h4 className={styles.header}>{cleanSnippet(props.data.snippet.title)}</h4>

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import styles from '../styles/DataVizStyles/DataViz.module.css'
 import dynamic from "next/dynamic"
 
-const dataviz = () => {
+const Dataviz = () => {
   const [page,setPage] = useState(1)
   const next = () => setPage(page + 1)
   const prev = () => setPage(page - 1)
@@ -42,4 +42,4 @@ const dataviz = () => {
   )
 }
 
-export default dataviz
+export default Dataviz

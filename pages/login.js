@@ -19,7 +19,7 @@ const schema = yup
   })
   .required();
 
-const login = () => {
+const Login = () => {
   const {register,reset,handleSubmit,formState: { errors }} = useForm({
     resolver: yupResolver(schema),
   })
@@ -78,4 +78,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login

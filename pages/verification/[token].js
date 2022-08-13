@@ -6,7 +6,7 @@ import Spinner from '../../Components/Spinner/Spinner'
 import { VERIFICATION } from '../../Components/Utilis/GraphqlQuery'
 import styles from '../../styles/VerificationStyles/Verification.module.css'
 
-const verification = () => {
+const Verification = () => {
   const [verificationData,verificationMutation] = useMutation(VERIFICATION,{onError:(error)=>console.log(error)})
   const{setValue} = useContext(AppContext)
   const router = useRouter()
@@ -33,4 +33,4 @@ const verification = () => {
   )
 }
 
-export default verification
+export default Verification

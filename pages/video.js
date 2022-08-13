@@ -15,7 +15,7 @@ import { reverseList } from '../Components/Utilis/ReverseList'
 import { getEmail, getFirstTwoLetters, getUserName } from '../Components/Utilis/UserNameManipulation'
 
 
-const video = () => {
+const Video = () => {
   const{clickedVideo} = useContext(AppContext)
   let video = useQuery(GET_VIDEODATA,{
     variables: {videoId: clickedVideo.id}})
@@ -91,7 +91,7 @@ const video = () => {
       <div className={styles.container}>
       <div className={styles.video}>
       <div className={styles.embed}>
-            <iframe className={styles.iframe} title="videoplayer" src={ `https://www.youtube.com/embed/${clickedVideo.id}`}  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+            <iframe className={styles.iframe} title="videoplayer" src={ `https://www.youtube.com/embed/${clickedVideo.id}`}  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
           </div>
           <div className={styles.segment}>
             <h4 className={styles.header}>{cleanSnippet(clickedVideo.snippet.title)}</h4>
@@ -205,4 +205,4 @@ const video = () => {
   )
 }
 
-export default video
+export default Video
