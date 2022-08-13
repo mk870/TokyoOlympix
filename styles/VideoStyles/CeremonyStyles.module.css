@@ -1,0 +1,34 @@
+.container{
+ display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.container h1{
+ color: blue;
+}
+.iframe{
+ width: 90vw;
+ max-width:1500px;
+ height: 95vh;
+ margin-top: 20px;
+}
+.segment{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ 
+}
+.segment h4{
+ color:blue;
+}
+@media (max-width:500px){
+ 
+  .iframe{
+    width:90vw;
+    height:60vh;
+  }
+ 
+}

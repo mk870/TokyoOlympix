@@ -1,0 +1,22 @@
+.container{
+ display: flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ color:white;
+}
+.container select{
+  width: 25%;
+  min-width:200px;
+  height:30px;
+  border-radius:5px;
+  outline: none;
+  text-align:center;
+  font-size:1.2em;
+}
+.container label{
+ margin-top:15px;
+ margin-bottom:10px;
+ font-weight:bold;
+ color:rgba(0, 2, 7, 0.9);
+}

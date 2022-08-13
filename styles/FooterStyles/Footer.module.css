@@ -1,0 +1,17 @@
+.footer{
+  background-color: black;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-direction:row;
+  color:aliceblue;
+  
+}
+@media (max-width:460px) {
+  .footer{
+    flex-direction:column;
+    align-items:center;
+    height: 100px;
+  }
+  
+}

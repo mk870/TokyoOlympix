@@ -1,0 +1,23 @@
+.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+}
+.wrapper{
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  color:black;
+}
+
+@media (max-width:1100px){
+  .container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+}
+
+
