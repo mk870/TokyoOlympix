@@ -31,6 +31,9 @@
 .segment h4{
   color: blue;
 }
+.segment2 h1{
+  color: blue;
+}
 .videoList{
   display:flex;
   flex-direction:column;

@@ -13,7 +13,7 @@ import Popup from '../Components/Popups/Popup'
 import LikesAndDislikes from '../Components/LikesAndDislikes/LikesAndDislikes'
 import { reverseList } from '../Components/Utilis/ReverseList'
 import { getEmail, getFirstTwoLetters, getUserName } from '../Components/Utilis/UserNameManipulation'
-
+import dynamic from "next/dynamic"
 
 const Video = () => {
   const{clickedVideo} = useContext(AppContext)
@@ -88,7 +88,7 @@ const Video = () => {
   
     return (
     <div className={styles.wrapper}>
-      <div className={styles.container}>
+      {clickedVideo?<div className={styles.container}>
       <div className={styles.video}>
       <div className={styles.embed}>
             <iframe className={styles.iframe} title="videoplayer" src={ `https://www.youtube.com/embed/${clickedVideo.id}`}  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
@@ -98,7 +98,7 @@ const Video = () => {
             
           </div>
           {video.loading && <div className={styles.loader}><Spinner/></div>}
-          {video.error && <h4 className={styles.error}>Sorry an error occured</h4>}
+          {video.error && <h4 className={styles.error}>Sorry an error occurred fetching comments</h4>}
           {video.data && <div className={styles.graphql}>
             <LikesAndDislikes video={video}/>
             <div className={styles.comments}>
@@ -200,7 +200,7 @@ const Video = () => {
             </div>
           ))}
         </div>
-    </div>
+    </div>:<h1 className={styles.segment2}>No video</h1>}
     </div>
   )
 }
