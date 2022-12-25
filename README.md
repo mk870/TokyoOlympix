@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tokyo Olympics Data Visualization App (Nextjs Frontend) <img src="https://i.ibb.co/nPRnS5X/logo2.jpg" alt="logo2" border="0" align="center" width="70" border-radius="15">
+<img src="https://i.ibb.co/vZvfNNh/Tokyo2021-App-1.png" alt="Tokyo2021-App-1" border="0">
 
-## Getting Started
+## Project Summary 
+* This is a Nextjs app that shows data visualizations via the tableau API and highlights via the youtube API of the 2021 Tokyo Olympics.
+* The app also allows you to add, edit and delete comments and likes on the videos via Apollo client to a [**GraphQL springboot server**](https://github.com/mk870/TokyoOlympix-GraphQL-Backend). 
 
-First, run the development server:
+### Project Steps :
+* The app has 7 pages using Next-router (homepage, DataVizualisations, Highlights, video, verification, login and signup page)
+* This app consumes 1 custom made api, a [**GraphQL springboot server**](https://github.com/mk870/TokyoOlympix-GraphQL-Backend)  with a postgreSQL database.
+* Finally, css was used to style the entire application.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### **Resources Used**
+***
+**Nextjs Version :** 12.2.0  
+**Reactjs Version :** 18.2.0  
+**Tableau Public**  
+**Kaggle** 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Language Used :** Javascript, GraphQL
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Dependencies**:  tableau-react, React-icons, css, react-context, react-loader-spinner and react-hook-form.  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)	![JWT](https://img.shields.io/badge/JWT-black?style=flat&logo=JSON%20web%20tokens) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white) ![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=flat&logo=apollo-graphql) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=flat&logo=reacthookform&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**For Web Framework Requirements**: npm install
 
-## Learn More
+**APIs**: tableau, youtube ,context Api, [**GraphQL springboot server**](https://github.com/mk870/TokyoOlympix-GraphQL-Backend) 
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### **Data Visualizations** 
+* The olympics data was collected from Kaggle and tableau public was used to visualize the data and create 4 dashboards.
+* Tableau Api is used to pull my tableau dashboards and serve them on the browser.
+* The dashboard includes barcharts, piecharts and maps to show the data analysis of athletes, medals won per country, gender representation per discipline etc..
 
-## Deploy on Vercel
+<img src="https://i.ibb.co/H46BD3S/Tokyo2021-App-2.png" alt="Tokyo2021-App-2" border="0">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Highlights**  
+* The app allows users to watch the olympics highlights from each discipline thanks to the youtube API.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<img src="https://i.ibb.co/vLkfkzp/Tokyo2021-App-3.png" alt="Tokyo2021-App-3" border="0">
+
+### **Comments and Likes/Dislikes**  
+* Registered users can comment, like and dislike videos and this is persisted to the server using apollo client.
+  
+
+<img src="https://i.ibb.co/30tXN0b/Tokyo2021-App-4.png" alt="Tokyo2021-App-4" border="0">
+
+
+### **Productionization**
+Deployed the app to Vercel.
+
+**Live Implemantation:** [Tokyo Olympix App](https://tokyo-olympix.vercel.app)
