@@ -7,7 +7,7 @@
 
 ### Project Steps :
 * The app has 7 pages using Next-router (homepage, DataVizualisations, Highlights, video, verification, login and signup page)
-* This app consumes 1 custom made api, a [**GraphQL springboot server**](https://github.com/mk870/TokyoOlympix-GraphQL-Backend)  with a mysql database.
+* This app consumes 1 custom made api, a [**GraphQL springboot server**](https://github.com/mk870/TokyoOlympix-GraphQL-Backend)  with a postgreSQL database.
 * Finally, css was used to style the entire application.
 
 ### **Resources Used**
